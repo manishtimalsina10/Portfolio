@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Services - Manish Timalsina</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                MANISH <span>TIMALSINA</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="services.html">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="contact.html">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="services.html">Service</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="main-container">
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500">My Services</h1>
+                <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">As a Frontend Developer, I offer a range of services designed to help you build and improve your web presence. Below are some of the services I provide:</p>
+
+                <div class="service-list">
+                    <div class="service-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                        <h2>Website Development</h2>
+                        <p>Creating responsive, interactive websites using HTML, CSS, and JavaScript, optimized for performance and user experience.</p>
+                    </div>
+
+                    <div class="service-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                        <h2>Web Application Development</h2>
+                        <p>Building dynamic and scalable web applications using modern frameworks like React.js to provide rich user interfaces.</p>
+                    </div>
+
+                    <div class="service-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                        <h2>UI/UX Design</h2>
+                        <p>Designing intuitive and visually appealing interfaces that provide seamless experiences for users across all devices.</p>
+                    </div>
+
+                    <div class="service-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                        <h2>Website Maintenance</h2>
+                        <p>Providing ongoing support and updates for websites and applications, ensuring they stay current and run smoothly.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="image" data-aos="zoom-out" data-aos-duration="1500">
+                <img src="/Images/My Pic.JPG" alt="Services Image">
+            </div> -->
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset:0});
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
