@@ -59,21 +59,40 @@
             <div class="content">
                 <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hire Me</h1>
                 
-                <form id="hireMeForm" class="form-container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1100">
-                    <div class="form-group">
-                        <label for="name">Your Name:</label>
-                        <input type="text" id="name" name="name" required class="input-field">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email:</label>
-                        <input type="email" id="email" name="email" required class="input-field">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required class="input-field"></textarea>
-                    </div>
-                    <button type="submit" class="btn">Submit</button>
-                </form>
+                <form action="https://formspree.io/f/meoorlop" method="POST">
+                    <label>
+                      Your name:
+                      <br />
+                      <input type="text" name="name" required style="width: 100%; padding: 10px; margin: 5px 0;" />
+                    </label>
+                    <br /><br />
+                    <label>
+                      Your email:
+                      <br />
+                      <input type="email" name="email" required style="width: 100%; padding: 10px; margin: 5px 0;" />
+                    </label>
+                    <br /><br />
+                    <label>
+                      Your phone number:
+                      <br />
+                      <input type="text" name="phone" required style="width: 100%; padding: 10px; margin: 5px 0;" />
+                    </label>
+                    <br /><br />
+                    <label>
+                      Organization/College:
+                      <br />
+                      <input type="text" name="organization" required style="width: 100%; padding: 10px; margin: 5px 0;" />
+                    </label>
+                    <br /><br />
+                    <label>
+                      Your message:
+                      <br />
+                      <textarea name="message" required style="width: 100%; height: 150px; padding: 10px; margin: 5px 0;"></textarea>
+                    </label>
+                    <br /><br />
+                    <button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Send</button>
+                  </form>
+                  
                 <div id="confirmationMessage" class="confirmation-message" style="display: none;" data-aos="fade-in" data-aos-duration="1500">
                     <i class="fa-solid fa-circle-check"></i>
                     <p>Thank you for your message!</p>
